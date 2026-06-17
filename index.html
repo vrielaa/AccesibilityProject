@@ -21,9 +21,7 @@
     </a>
 
     <div class="min-h-screen bg-[#f7f7f7]">
-      <header
-        class="flex flex-wrap items-center gap-y-[2rem] bg-white px-[2.4rem] py-[2.4rem] lg:flex-nowrap lg:px-[6rem]"
-      >
+      <header class="flex items-center bg-white px-[6rem] py-[2.4rem]">
         <a href="/" aria-label="Home page" class="flex h-[3.4rem] w-[3.4rem] shrink-0">
           <img
             src="./assets/Logo.png"
@@ -33,10 +31,7 @@
           />
         </a>
 
-        <nav
-          aria-label="Main navigation"
-          class="order-3 mt-[1.6rem] flex w-full items-center overflow-x-auto lg:order-none lg:mt-0 lg:ml-[7.6rem] lg:w-auto lg:overflow-visible"
-        >
+        <nav aria-label="Main navigation" class="ml-[7.6rem] flex items-center">
           <ul
             class="flex items-center font-['Outfit'] text-[1.8rem] leading-[150%] font-normal tracking-normal whitespace-nowrap"
           >
@@ -71,7 +66,7 @@
         <form
           role="search"
           aria-label="Site search"
-          class="ml-auto flex h-[4.8rem] w-full max-w-[42.4rem] items-center border border-[#35624d] bg-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#35624d] sm:w-[42.4rem]"
+          class="ml-auto flex h-[4.8rem] w-[42.4rem] items-center border border-[#35624d] bg-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#35624d]"
         >
           <label for="site-search" class="sr-only">Search this site</label>
 
@@ -96,12 +91,12 @@
       <main id="main-content">
         <section
           aria-labelledby="hero-title"
-          class="grid grid-cols-1 items-center gap-[4rem] px-[2.4rem] pt-[3.2rem] pb-[6rem] lg:grid-cols-[minmax(0,1fr)_64rem] lg:gap-[6.4rem] lg:px-[6rem] lg:pt-[2.4rem]"
+          class="grid grid-cols-[minmax(0,1fr)_64rem] items-center gap-[6.4rem] px-[6rem] pt-[2.4rem] pb-[6rem]"
         >
           <div class="max-w-[70rem]">
             <h1
               id="hero-title"
-              class="font-['Outfit'] text-[3.4rem] leading-[120%] font-bold tracking-normal text-[#35624d] opacity-100 lg:h-[5.8rem] lg:w-[64.7rem] lg:text-[4.8rem]"
+              class="h-[5.8rem] w-[64.7rem] font-['Outfit'] text-[4.8rem] leading-[120%] font-bold tracking-normal text-[#35624d] opacity-100"
             >
               Lorem ipsum dolor sit amet
             </h1>
@@ -128,8 +123,368 @@
           <img
             src="./assets/hero-leaves.png"
             alt="Close-up image of green monstera leaves"
-            class="aspect-square h-auto w-full max-w-[64rem] justify-self-center object-cover lg:h-[64rem] lg:w-[64rem]"
+            class="h-[64rem] w-[64rem] justify-self-center object-cover"
           />
+        </section>
+
+        <section
+          aria-labelledby="about-cards-title"
+          class="bg-[#FFFFFF] px-[6rem] pt-[3rem] pb-[10rem]"
+        >
+          <h2 id="about-cards-title" class="sr-only">About accessibility topics</h2>
+
+          <div class="grid grid-cols-2 gap-[4rem]">
+            <article
+              class="h-[29rem] rounded-[0.3rem] bg-[#3f634f] py-[3rem] pr-[3.2rem] pl-[3.2rem] text-white"
+            >
+              <div class="grid h-full grid-cols-[auto_1fr] gap-[2.4rem]">
+                <img
+                  src="./assets/bush_leaves.png"
+                  alt="Dense green bush leaves"
+                  class="h-[23rem] w-[18rem] object-cover"
+                />
+
+                <div class="flex h-full min-h-0 flex-col">
+                  <h3
+                    class="font-['Outfit'] text-[1.8rem] leading-[150%] font-bold tracking-normal"
+                  >
+                    About Us
+                  </h3>
+                  <p
+                    class="mt-[1.2rem] min-h-0 overflow-hidden font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt
+                    posuere eu risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam
+                    ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla
+                    aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt
+                    posuere eu risus cursus.
+                  </p>
+                  <a
+                    href="#"
+                    class="mt-auto inline-flex pt-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-bold tracking-normal underline decoration-white decoration-solid decoration-1 underline-offset-0 focus:outline-2 focus:outline-offset-4 focus:outline-white"
+                  >
+                    Learn more about&nbsp;&rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="h-[29rem] rounded-[0.3rem] bg-[#3f634f] py-[3rem] pr-[3.2rem] pl-[3.2rem] text-white"
+            >
+              <div class="grid h-full grid-cols-[auto_1fr] gap-[2.4rem]">
+                <img
+                  src="./assets/bush_leaves.png"
+                  alt="Dense green bush leaves"
+                  class="h-[23rem] w-[18rem] object-cover"
+                />
+
+                <div class="flex h-full min-h-0 flex-col">
+                  <h3
+                    class="font-['Outfit'] text-[1.8rem] leading-[150%] font-bold tracking-normal"
+                  >
+                    About Us
+                  </h3>
+                  <p
+                    class="mt-[1.2rem] min-h-0 overflow-hidden font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt
+                    posuere eu risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam
+                    ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla
+                    aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt
+                    posuere eu risus cursus.
+                  </p>
+                  <a
+                    href="#"
+                    class="mt-auto inline-flex pt-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-bold tracking-normal underline decoration-white decoration-solid decoration-1 underline-offset-0 focus:outline-2 focus:outline-offset-4 focus:outline-white"
+                  >
+                    Learn more about&nbsp;&rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section
+          aria-labelledby="contact-title"
+          class="flex justify-center bg-[#77887e] pt-[8rem] pr-[6.4rem] pb-[8rem] pl-[6.4rem]"
+        >
+          <div
+            class="flex h-[63.7rem] w-[131.2rem] rounded-[1.2rem] bg-white shadow-[3px_4px_32px_0px_rgba(0,0,0,0.12)]"
+          >
+            <aside
+              class="flex h-[63.7rem] w-[42.5rem] shrink-0 flex-col rounded-[1.2rem] bg-white bg-cover bg-no-repeat px-[4rem] py-[5.6rem]"
+              style="
+                background-image: url(&quot;./assets/contact_leaf.jpg&quot;);
+                background-position: calc(100% + 2rem) 100%;
+              "
+            >
+              <h2
+                id="contact-title"
+                class="font-['Outfit'] text-[4.8rem] leading-[120%] font-bold tracking-normal text-[#111111]"
+              >
+                Contact Us
+              </h2>
+              <p
+                class="mt-[2.4rem] w-[32rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+              >
+                Fill up the form and ur Team will get back to you within 24 hours. Happy to see your
+                message!
+              </p>
+
+              <address class="mt-[5.2rem] grid gap-[2rem] not-italic">
+                <a
+                  href="tel:+380931532456"
+                  class="flex items-center gap-[3.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="flex h-[3.2rem] w-[3.2rem] items-center justify-center rounded-full bg-[#111111] text-[2rem] leading-none font-bold text-white"
+                    >f</span
+                  >
+                  +380 93 15 32 456
+                </a>
+                <a
+                  href="mailto:example@gmail.com"
+                  class="flex items-center gap-[3.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="flex h-[3.2rem] w-[3.2rem] items-center justify-center rounded-full bg-[#111111] text-[2rem] leading-none font-bold text-white"
+                    >f</span
+                  >
+                  example@gmail.com
+                </a>
+                <p
+                  class="flex items-center gap-[3.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="flex h-[3.2rem] w-[3.2rem] items-center justify-center rounded-full bg-[#111111] text-[2rem] leading-none font-bold text-white"
+                    >f</span
+                  >
+                  Pidmurna 5a, Lviv
+                </p>
+              </address>
+
+              <ul class="mt-auto flex gap-[4.4rem]" aria-label="Social links">
+                <li>
+                  <a
+                    href="#"
+                    aria-label="Facebook"
+                    class="flex h-[3.2rem] w-[3.2rem] items-center justify-center rounded-full bg-[#111111] text-[2.6rem] leading-none font-bold text-white focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                    >f</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    aria-label="Facebook"
+                    class="flex h-[3.2rem] w-[3.2rem] items-center justify-center rounded-full bg-[#111111] text-[2.6rem] leading-none font-bold text-white focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                    >f</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    aria-label="Facebook"
+                    class="flex h-[3.2rem] w-[3.2rem] items-center justify-center rounded-full bg-[#111111] text-[2.6rem] leading-none font-bold text-white focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                    >f</a
+                  >
+                </li>
+              </ul>
+            </aside>
+
+            <form
+              action="#"
+              method="post"
+              class="h-[63.7rem] flex-1 pt-[5.6rem] pr-[2rem] pb-[4.8rem] pl-[1.7rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+            >
+              <div class="grid grid-cols-2 gap-x-[2.4rem] gap-y-[2.4rem]">
+                <label
+                  class="grid gap-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                  for="first-name"
+                >
+                  <span><span class="text-red-600">*</span> First Name</span>
+                  <input
+                    id="first-name"
+                    name="first-name"
+                    type="text"
+                    required
+                    class="h-[5rem] border border-[#111111] px-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal outline-none focus:border-[#35624d] focus:outline-2 focus:outline-offset-0 focus:outline-[#35624d]"
+                  />
+                </label>
+
+                <label
+                  class="grid gap-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                  for="last-name"
+                >
+                  <span><span class="text-red-600">*</span> Last Name</span>
+                  <input
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    required
+                    placeholder="Doe"
+                    class="h-[5rem] border border-[#111111] px-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal outline-none placeholder:text-[#8a8a8a] focus:border-[#35624d] focus:outline-2 focus:outline-offset-0 focus:outline-[#35624d]"
+                  />
+                </label>
+
+                <label
+                  class="grid gap-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                  for="contact-email"
+                >
+                  Email
+                  <input
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    value="example@gmail.com"
+                    class="h-[5rem] border border-[#111111] px-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal outline-none focus:border-[#35624d] focus:outline-2 focus:outline-offset-0 focus:outline-[#35624d]"
+                  />
+                </label>
+
+                <div class="grid gap-[1.2rem]">
+                  <label
+                    class="font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                    for="phone-number"
+                  >
+                    Phone Number
+                  </label>
+                  <div
+                    class="flex h-[5rem] items-center border border-[#111111] focus-within:border-[#35624d] focus-within:outline-2 focus-within:outline-offset-0 focus-within:outline-[#35624d]"
+                  >
+                    <label for="phone-country" class="sr-only">Country code</label>
+                    <select
+                      id="phone-country"
+                      name="phone-country"
+                      class="h-full w-[8.2rem] bg-white px-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal outline-none"
+                    >
+                      <option>+380</option>
+                    </select>
+                    <span aria-hidden="true" class="h-[2.8rem] w-px bg-[#8a8a8a]"></span>
+                    <input
+                      id="phone-number"
+                      name="phone-number"
+                      type="tel"
+                      placeholder="00 000 00 00"
+                      class="h-full min-w-0 flex-1 px-[1.8rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal outline-none placeholder:text-[#8a8a8a]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <fieldset
+                class="mt-[3rem] flex h-[4rem] w-[85rem] items-center justify-start gap-[3.6rem]"
+              >
+                <legend class="sr-only">Select your role</legend>
+
+                <label
+                  class="flex items-center gap-[1.4rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                >
+                  <input
+                    type="radio"
+                    name="role"
+                    value="ui-developer"
+                    checked
+                    class="h-[2.4rem] w-[2.4rem] accent-[#35624d]"
+                  />
+                  UI Developer
+                </label>
+                <label
+                  class="flex items-center gap-[1.4rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                >
+                  <input
+                    type="radio"
+                    name="role"
+                    value="ui-ux-designer"
+                    class="h-[2.4rem] w-[2.4rem] accent-[#35624d]"
+                  />
+                  UI/UX Designer
+                </label>
+                <label
+                  class="flex items-center gap-[1.4rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                >
+                  <input
+                    type="radio"
+                    name="role"
+                    value="accessibility-expert"
+                    class="h-[2.4rem] w-[2.4rem] accent-[#35624d]"
+                  />
+                  Accessibility Expert
+                </label>
+                <label
+                  class="flex items-center gap-[1.4rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                >
+                  <input
+                    type="radio"
+                    name="role"
+                    value="qa-engineer"
+                    class="h-[2.4rem] w-[2.4rem] accent-[#35624d]"
+                  />
+                  QA Engineer
+                </label>
+                <label
+                  class="flex items-center gap-[1.4rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                >
+                  <input
+                    type="radio"
+                    name="role"
+                    value="other"
+                    class="h-[2.4rem] w-[2.4rem] accent-[#35624d]"
+                  />
+                  Other
+                </label>
+              </fieldset>
+
+              <label
+                for="contact-message"
+                class="mt-[2.8rem] grid gap-[1.2rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+              >
+                Message
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  placeholder="Text here..."
+                  class="h-[10.4rem] w-[85rem] resize-none rounded-[0.3rem] border border-[#111111] pt-[1.2rem] pr-[1.2rem] pb-[1.2rem] pl-[0.8rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal outline-none placeholder:text-[#8a8a8a] focus:border-[#35624d] focus:outline-2 focus:outline-offset-0 focus:outline-[#35624d]"
+                ></textarea>
+              </label>
+
+              <div class="mt-[3rem] flex items-center gap-[7.8rem]">
+                <label
+                  class="flex items-center gap-[2.4rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                >
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    class="h-[2.4rem] w-[2.4rem] accent-[#35624d]"
+                  />
+                  Accept the Terms
+                </label>
+                <label
+                  class="flex items-center gap-[2.4rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+                >
+                  <input
+                    type="checkbox"
+                    name="terms-2"
+                    checked
+                    class="h-[2.4rem] w-[2.4rem] accent-[#35624d]"
+                  />
+                  Accept the Terms 2
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="mt-[3rem] ml-auto flex h-[4.9rem] w-[19.6rem] items-center justify-center gap-[1rem] rounded-[0.2rem] bg-[#35624d] py-[1.1rem] text-center align-middle font-['Outfit'] text-[1.8rem] leading-[150%] font-normal tracking-normal whitespace-nowrap text-white opacity-100 focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </section>
       </main>
     </div>
