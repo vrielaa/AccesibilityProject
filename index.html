@@ -11,58 +11,127 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="grid grid-cols-2 px-[5rem] py-[2rem]">
-      <div class="flex w-full justify-between">
-        <a href="/" aria-label="Home page" class="logo">
-          <img src="./assets/logo.png" alt="Logo" />
+
+  <body class="bg-[#f7f7f7] font-['Outfit'] text-black">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-[2rem] focus:left-[2rem] focus:z-50 focus:bg-[#35624d] focus:px-[1.6rem] focus:py-[1rem] focus:text-white focus:outline-2 focus:outline-offset-2"
+    >
+      Skip to content
+    </a>
+
+    <div class="min-h-screen bg-[#f7f7f7]">
+      <header
+        class="flex flex-wrap items-center gap-y-[2rem] bg-white px-[2.4rem] py-[2.4rem] lg:flex-nowrap lg:px-[6rem]"
+      >
+        <a href="/" aria-label="Home page" class="flex h-[3.4rem] w-[3.4rem] shrink-0">
+          <img
+            src="./assets/Logo.png"
+            alt=""
+            aria-hidden="true"
+            class="h-full w-full object-contain"
+          />
         </a>
 
-        <nav aria-label="Main navigation" class="mr-[44rem] flex items-center">
+        <nav
+          aria-label="Main navigation"
+          class="order-3 mt-[1.6rem] flex w-full items-center overflow-x-auto lg:order-none lg:mt-0 lg:ml-[7.6rem] lg:w-auto lg:overflow-visible"
+        >
           <ul
-            class="flex items-center font-['Outfit'] text-[18px] leading-[150%] font-normal tracking-normal"
+            class="flex items-center font-['Outfit'] text-[1.8rem] leading-[150%] font-normal tracking-normal whitespace-nowrap"
           >
-            <li class="border-r border-slate-600 pr-4">
-              <a href="#" class="focus:outline-2 focus:outline-offset-4">About Us</a>
+            <li class="border-r border-slate-600 pr-[1.6rem]">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                >About Us</a
+              >
             </li>
-            <li class="border-r border-slate-600 px-4">
-              <a href="#" class="focus:outline-2 focus:outline-offset-4">Contact Us</a>
+            <li class="border-r border-slate-600 px-[1.6rem]">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                >Contact Us</a
+              >
             </li>
-            <li class="border-r border-slate-600 px-4">
-              <a href="#" class="focus:outline-2 focus:outline-offset-4">Blog</a>
+            <li class="border-r border-slate-600 px-[1.6rem]">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                >Blog</a
+              >
             </li>
-            <li class="border-r border-slate-600 px-4">
-              <a href="#" class="focus:outline-2 focus:outline-offset-4">Site Map</a>
+            <li class="border-r border-slate-600 px-[1.6rem]">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                >Site Map</a
+              >
             </li>
-            <li class="pl-4">
-              <a href="#" class="focus:outline-2 focus:outline-offset-4">Eng</a>
+            <li class="pl-[1.6rem]">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+                >Eng</a
+              >
             </li>
           </ul>
         </nav>
-      </div>
-      <form
-        role="search"
-        aria-label="Site search"
-        class="flex h-[4.8rem] w-[42.4rem] ml-auto items-center border border-emerald-900 bg-white"
-      >
-        <label for="site-search" class="sr-only">Search this site</label>
 
-        <input
-          id="site-search"
-          name="query"
-          type="search"
-          placeholder="Search this site"
-          class="min-w-0 flex-1 px-3 align-middle font-['Outfit'] text-[18px] leading-[26px] font-normal tracking-normal outline-none"
-        />
-
-        <button
-          type="submit"
-          aria-label="Search Button"
-          class="flex h-full items-center justify-center bg-emerald-900 text-white focus:outline-2 focus:outline-offset-2 focus:outline-emerald-900"
+        <form
+          role="search"
+          aria-label="Site search"
+          class="ml-auto flex h-[4.8rem] w-full max-w-[42.4rem] items-center border border-[#35624d] bg-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#35624d] sm:w-[42.4rem]"
         >
-          <img src="./assets/search_button.png" alt="" aria-hidden="true" />
-        </button>
-      </form>
-    </header>
+          <label for="site-search" class="sr-only">Search this site</label>
+
+          <input
+            id="site-search"
+            name="query"
+            type="search"
+            placeholder="Search this site"
+            class="min-w-0 flex-1 px-[1.8rem] font-['Outfit'] text-[1.8rem] leading-[2.6rem] font-normal tracking-normal outline-none placeholder:text-[#6f8a7d]"
+          />
+
+          <button
+            type="submit"
+            aria-label="Search"
+            class="flex h-full w-[4.8rem] shrink-0 items-center justify-center bg-[#35624d] focus:outline-2 focus:outline-offset-2 focus:outline-[#35624d]"
+          >
+            <img src="./assets/search_button.png" alt="" aria-hidden="true" class="h-full w-full" />
+          </button>
+        </form>
+      </header>
+
+      <main id="main-content">
+        <section
+          aria-labelledby="hero-title"
+          class="grid grid-cols-1 items-center gap-[4rem] px-[2.4rem] pt-[3.2rem] pb-[6rem] lg:grid-cols-[minmax(0,1fr)_64rem] lg:gap-[6.4rem] lg:px-[6rem] lg:pt-[2.4rem]"
+        >
+          <div class="max-w-[70rem]">
+            <h1
+              id="hero-title"
+              class="font-['Outfit'] text-[3.4rem] leading-[120%] font-bold tracking-normal text-[#35624d] opacity-100 lg:h-[5.8rem] lg:w-[64.7rem] lg:text-[4.8rem]"
+            >
+              Lorem ipsum dolor sit amet
+            </h1>
+            <p class="mt-[4rem] text-[2.1rem] leading-[3.2rem] font-semibold text-[#35624d]">
+              Lorem ipsum dolor sit amet
+            </p>
+            <p
+              class="mt-[1.4rem] max-w-[50rem] font-['Outfit'] text-[1.4rem] leading-[150%] font-normal tracking-normal"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu
+              risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <a
+              href="#"
+              class="mt-[3.6rem] inline-flex h-[4.8rem] w-[19.4rem] items-center justify-center bg-[#35624d] text-[1.4rem] leading-[2rem] font-normal text-white focus:outline-2 focus:outline-offset-4 focus:outline-[#35624d]"
+            >
+              Buy Now
+            </a>
+          </div>
+
+          <img
+            src="./assets/hero-leaves.png"
+            alt="Close-up image of green monstera leaves"
+            class="aspect-square h-auto w-full max-w-[64rem] justify-self-center object-cover lg:h-[64rem] lg:w-[64rem]"
+          />
+        </section>
+      </main>
+    </div>
   </body>
 </html>
