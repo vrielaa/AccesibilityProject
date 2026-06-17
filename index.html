@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website about plants" />
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="grid grid-cols-2 px-[3rem] py-[2rem]">
+      <div class="flex w-full justify-between">
+        <a href="/" aria-label="Home page" class="logo">
+          <img src="./assets/logo.png" alt="Logo" />
+        </a>
+        <nav aria-label="Main navigation" class="mr-[45rem] flex items-center">
+          <ul
+            class="flex items-center font-['Outfit'] text-[18px] leading-[150%] font-normal tracking-normal"
+          >
+            <li class="border-r border-slate-600 pr-4">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4">About Us</a>
+            </li>
+            <li class="border-r border-slate-600 px-4">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4">Contact Us</a>
+            </li>
+            <li class="border-r border-slate-600 px-4">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4">Blog</a>
+            </li>
+            <li class="border-r border-slate-600 px-4">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4">Site Map</a>
+            </li>
+            <li class="pl-4">
+              <a href="#" class="focus:outline-2 focus:outline-offset-4">Eng</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
